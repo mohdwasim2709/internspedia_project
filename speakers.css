@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Agency FB", sans-serif;
+}
+body{
+    background-image: url('background.jpg');
+    overflow-x: hidden;
+    background-position: center;
+    max-height: 100%;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+.NAVBAR{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(48, 192, 240), rgb(34, 162, 213), rgb(10, 119, 143));
+    justify-content: space-between;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.img-nav {
+    width: 48px;
+    padding: 4px;
+    height: 48px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+nav ul span {
+    display: flex;
+}
+
+nav ul .nav-item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 12px 12px;
+    margin-top: 6px;
+    margin-bottom: 2px;
+    font-size: 16px !important;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    animation-duration: 300ms;
+    text-decoration: underline;
+    background-color: blanchedalmond;
+    padding: 12px 12px;
+    opacity: 70%;
+    transition: ease-in-out;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+@media (min-width: 622px) {
+    .NAVBAR {
+        flex-direction: row;
+    }
+    nav ul .nav-item{
+        margin-right: 1.2rem;
+        margin-left: 1.5rem;
+        margin-top: 2px;
+    }
+    .searchBox {
+        position: fixed;
+        width: 18rem;
+        left: 11rem;
+    }
+}
+
+@media (min-width: 320px) {
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+.container-image-nav {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    flex-direction: row;
+    color: black;
+}
+
+.svg-resize  { width: 32px; height: 32px; margin-left: 32px; padding: 8px 8px; background: transparent; border-radius: 100%; transition-duration: 300ms; cursor: pointer; color: whitesmoke; z-index: 1;}
+.svg-resize:hover{
+    background: lightslategray;
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.searchBox {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    width: 16rem;
+    outline: none;
+    border: 1px solid gray;
+    height: 2.2rem;
+    font-size: large;
+    border-radius: 8px;
+    background: whitesmoke;
+    transition-duration: 300ms;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchBox:focus {
+    border: 2px solid lightslategray;
+    background: ghostwhite;
+}
+
+.searchBox::placeholder {
+    padding-left: 0.5rem;
+}
+
+.searchBox:focus::placeholder {
+    color: transparent;
+}
+
+.searchBox:focus + .searchButton {
+    background: lightslategray;
+    color: white;
+}   
+
+.searchBarDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+table{
+    margin-left: 10px;
+}
+td,th{
+    padding-left: 50px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+}
